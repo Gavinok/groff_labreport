@@ -1,0 +1,56 @@
+.nr HM 2c
+.nr FM 2c
+.nr PS 12
+.ds FAM CM
+.de #
+.NH
+\\$*
+.LP
+..
+.de ##
+.NH 2
+\\$*
+.LP
+..
+.
+.
+.\" .LABTL "labe title"
+.de LABTL
+.fam \\*[FAM]
+.ce 3
+.ps +4
+.ft B
+ASTR 150
+.ft
+.sp
+.UL "Concepts in Modern Astronomy"
+.sp 1.5
+\\$1
+.ps
+.sp 2
+..
+.
+.
+.\" .LABDATE "date of lab" "report due date & time"
+.de LABDATE
+.fam \\*[FAM]
+.B1
+.sp
+.ft B
+.UL "Date of lab:"
+.ft
+\\$1
+.sp 2
+.ft B
+.UL "Report due date & time:"
+.ft
+\\$2
+.sp
+.B2
+.sp
+..
+.de NOTE
+.ps +5
+\m[red]\\$*\m[]
+.ps
+..

@@ -1,0 +1,120 @@
+.EQ
+delim @@
+.EN
+.nr HM 2c
+.nr FM 2c
+.nr PS 11
+.ds FAM CM
+.de #
+.NH
+\\$*
+.pdfbookmark 1 "\\$*"
+.LP
+..
+.de ##
+.NH 2
+\\$*
+.pdfbookmark 2 "\\$*"
+.LP
+..
+.
+.
+.\" .LABTL "labe title"
+.de LABTL
+.ps \\n[PS]
+.fam \\*[FAM]
+.ce 3
+.ps +4
+.ft B
+ASTR 150
+.ft
+.sp
+.UL "Concepts in Modern Astronomy"
+.sp 1.5
+\\$1
+.ps
+.sp 2
+..
+.
+.
+.\" .LABDATE "date of lab" "report due date & time"
+.de LABDATE
+.ps \\n[PS]
+.B1
+.sp
+.ft B
+.UL "Date of lab:"
+.ft
+\\$1
+.sp 2
+.ft B
+.UL "Report due date & time:"
+.ft
+\\$2
+.sp
+.B2
+.sp
+..
+.de NOTE
+.ps +5
+\m[red]\\$*\m[]
+.ps
+..
+.nr FIGURE.num 0
+.de FIGURE
+.nr FIGURE.num +1
+.ce 99
+.ps -2
+.ft I
+Figure \\n[FIGURE.num]: \\$*
+.ft
+.ps
+.ce 0
+..
+.
+.nr TABLE.num 0
+.de TABLE
+.nr TABLE.num +1
+.ce 99
+.ps -2
+.ft I
+Table \\n[TABLE.num]: \\$*
+.ft
+.ps
+.ce 0
+..
+.
+.nr EQUATION.num 0
+.de EQUATION
+.nr EQUATION.num +1
+.ce 99
+.ps -2
+.ft I
+Equation \\n[EQUATION.num]: \\$*
+.ft
+.ps
+.ce 0
+..
+.
+.ds BOX.in white
+.ds BOX.out black
+.ds BOX.boxer \
+    \\D'\\$1 0 -(\\n[rst]u - \\n[rsb]u + .4m) \
+    (\\n[BOX.wd]u + .4m) 0 \
+    0 (\\n[rst]u - \\n[rsb]u + .4m) \
+    -(\\n[BOX.wd]u + .4m) 0'
+
+.de BOX
+.  nr BOX.wd \w'\\$*'
+\h'.2m'\
+\h'-.2m'\v'(.2m - \\n[rsb]u)'\
+\M[\\*[BOX.in]]\
+\\*[BOX.boxer P]\
+\M[]\
+\M[\\*[BOX.out]]\
+\\*[BOX.boxer p]\
+\h'.2m'\v'-(.2m - \\n[rsb]u)'\
+\M[]\
+\\$*\
+\h'.2m'
+..
