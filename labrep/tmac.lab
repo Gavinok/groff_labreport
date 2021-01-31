@@ -1,6 +1,7 @@
 .nr HM 2c
 .nr FM 2c
 .nr PS 12
+.\" this will use the COMPUTER Modern fonts if installed
 .ds FAM CM
 .de #
 .NH
