@@ -3,7 +3,7 @@
 .mk a
 ..
 .de EE
-
+.br
 .mk b
 .sp |\\nau
 .rj
@@ -37,8 +37,8 @@ This objective section summarizes what someone should understand after
 reeding your report
 ..
 .PP
-The key learning objectives in this lab. Of this lab is to Learn about
-Kepler's laws of planetary motion. This intern will us better understand
+The key learning objectives in this lab. The goal of this lab is to Learn about
+Kepler's laws of planetary motion. This intern will help us better understand
 planetary motion. In addition, we will learn how to utilize
 triangulation and the locate planets in our solar system through use of
 the heliocentric, and geocentric systems.
@@ -60,54 +60,58 @@ learned in class, and from books, online research and other such
 sources.
 ..
 .PP
-Before the more common idea of our solar systems orbit the common
-conception was geocentric view of the solar system. In the geocentric
-view the solar system revolved around the earth. An alternative view of
+Before the more common understanding of our solar system's orbit the common
+conception was a geocentric view of the solar system. In the geocentric
+view the solar system revolved around the Earth. An alternative view of
 the universe was a heliocentric view where the planets revolve around
-the sun.
+the Sun.
 
-Using observations Johannes Kepler devised three laws of planetary
-motion which instead reinforced the notion that instead the solar system
-revolved around the sun. This view of the solar system revolving around
-the sun is known as the ecliptic view of the solar system.
+.PP
+Using observations made before telescopes Johannes Kepler devised three
+laws of planetary motion which reinforced the notion that instead the
+solar system revolved around the Sun. This view of the solar system
+revolving around the Sun is known as the ecliptic view of the solar
+system. Kepler also identified the fact that the orbit of planets
+followed an elliptical shape. He also identified that the planets travel
+faster as they move closer to the Sun. Finally he determined that the
+planets semi-major axis and it's period are proportional.
 
-.## Content
-.NOTE "RETURN TO THIS AFTER"
-.br
-- triangulation
+.\" .## Content
+.\" TODO: RETURN TO THIS AFTER
+.\" - triangulation
 .
 .ig
 Introduce and explain any important scientific concepts that you need
 for the lab. It is also helpful to define any specific scientific
 terminology used.
 ..
-
-These laws established by Kepler are as follows:
-.IP "1. "
-
+.
+.\" These laws established by Kepler are as follows:
+.\" .IP "1. "
+.
 .KS
 .# Procedure
 .PP
 For this lab the only equipment used was a sheet of graph paper, two
-triangular rulers, protractor, and a compass. Using the compass I drew a
+triangular rulers, a protractor, and a compass. Using the compass I drew a
 circle with a five centimetre radius at the centre of the graph paper to
-represent earth's orbit. I then drew a horizontal line horizontally from
+represent Earth's orbit. I then drew a horizontal line from
 the centre of the circle to represent the first point of Aries. Then
-using a table containing positions of earth in heliocentric coordinates
+using a table containing positions of Earth in heliocentric coordinates
 and Mars in geocentric coordinates on a specialized date. We then use
 these coordinates to triangulate the position of Mars. First I placed
-the matching locations of earth. Then using 2 triangular rulers a
-parallel line to the first point of Aries at the location of earth using
+the matching locations of Earth. Then using 2 triangular rulers a
+parallel line to the first point of Aries at the location of Earth using
 2 was used as 0° for the geocentric coordinates of Mars. Then from there
 I used the geocentric coordinates for Mars from each of the locations of
-earth to triangulate Mars. This triangulation should be accurate since
+Earth to triangulate Mars. This triangulation should be accurate since
 the measurements where taken at a multiple of orbital period of Mars
 (687 days). After marking each of the triangulated positions of Mars I
 drew an approximation of Mars's orbit. I then measured the distance
-between each calculated position of mars. These measurements where marked
+between each calculated position of Mars. These measurements where marked
 on the paper in purple ink. The longest distance was drawn in red
-representing the major axis. The distance was then measured for
-from the sun to each end of the major axis, as well as the distance to
+representing the major axis. The distance was then measured
+from the Sun to each end of the major axis, as well as the distance to
 the middle of the major axis.
 .KE
 .
@@ -128,18 +132,18 @@ specialized equipment describe it here
 .# Observations
 .PP
 Using table 1 we see the longest distance is determined to be from @M
-sub A@ to @M sub D@ with a distance of 16.2 cm. Contrary the procedure
+sub A@ to @M sub D@ with a distance of 16.2 cm. Contrary to the procedure
 described in the lab book this line did not cross the position of the
-sun. The semi-major distance is found to be 8.1cm is figure
+Sun. The semi-major distance is found to be 8.1cm is figure
 \n[fig_orbit]. The distance from the focal length was determined as to
 be 1.1cm. Finally the perihelion measured in at 7cm while the aphelion
 was 9.2cm.
 .
 .\"major-axis at MA and MD
-.\"this did not pass through the sun
-.\"midpoint to the sun ( focal length )is 1.1cm
-.\"sun -> ma = 7cm <- perihelion
-.\"md -> sun = 9.2cm <- aphelion
+.\"this did not pass through the Sun
+.\"midpoint to the Sun ( focal length )is 1.1cm
+.\"Sun -> ma = 7cm <- perihelion
+.\"md -> Sun = 9.2cm <- aphelion
 .
 .ig
 This section contains all the data you obtained during this lab
@@ -159,26 +163,26 @@ Include your sketches with your lab report
 .CD
 .TS
 allbox tab(|);
-ccn.
-location 1 | location 2 | Distance (cm)
-@M sub A@ | @M sub B@ |  6.1
-@M sub A@ | @M sub C@ | 13.0
-@M sub A@ | @M sub D@ | 16.2
-@M sub A@ | @M sub E@ | 15.9
-@M sub A@ | @M sub F@ |  8.0
-@M sub B@ | @M sub C@ |  8.0
-@M sub B@ | @M sub D@ | 13.7
-@M sub B@ | @M sub E@ | 16.1
-@M sub B@ | @M sub F@ | 11.5
-@M sub C@ | @M sub D@ |  7.7
-@M sub C@ | @M sub E@ | 13.2
-@M sub C@ | @M sub F@ | 13.9
-@M sub D@ | @M sub E@ |  7.0
-@M sub D@ | @M sub F@ | 12.8
-@M sub E@ | @M sub F@ |  8.2
+ccnn.
+location 1 | location 2 | Distance (cm) |Distance (AU)
+@M sub A@ | @M sub B@ |  6.1|1.22 
+@M sub A@ | @M sub C@ | 13.0|2.6 
+@M sub A@ | @M sub D@ | 16.2|3.24 
+@M sub A@ | @M sub E@ | 15.9|3.18 
+@M sub A@ | @M sub F@ |  8.0|1.6 
+@M sub B@ | @M sub C@ |  8.0|1.6 
+@M sub B@ | @M sub D@ | 13.7|2.74 
+@M sub B@ | @M sub E@ | 16.1|3.22 
+@M sub B@ | @M sub F@ | 11.5|2.3 
+@M sub C@ | @M sub D@ |  7.7|1.54 
+@M sub C@ | @M sub E@ | 13.2|2.64 
+@M sub C@ | @M sub F@ | 13.9|2.78 
+@M sub D@ | @M sub E@ |  7.0|1.4 
+@M sub D@ | @M sub F@ | 12.8|2.56 
+@M sub E@ | @M sub F@ |  8.2|1.64 
 .TE
 .TABLE "Distances Between Locations Of Mars"
-.nr mars_table \n[TABLE.num]
+.nr Mars_table \n[TABLE.num]
 .DE
 .KE
 .KS
@@ -187,6 +191,85 @@ location 1 | location 2 | Distance (cm)
 .FIGURE "Triangulated Orbit of Mars"
 .nr fig_orbit \n[FIGURE.num]
 .KE
+
+.# Calculations
+.SE
+.EQ
+"Scaled Distance To Sun (AU)" = "Distance To Sun In Diagram (cm)" over 5
+.EN
+.EE
+.nr eq_scale \n[eq.num]
+.SE
+.EQ
+"Distance from " M sub A " To Sun " =  { 7 cm } over 5 = 1.4 AU
+.EN
+.EE
+
+
+
+
+.KS
+.SE
+.EQ
+"Average Distance (AU)" =
+"Total Scaled Distance (AU)"
+over
+"Locations Of Mars"
+.EN
+.EE
+.nr eq_avgdistance \n[eq.num]
+.KE
+.SE
+.EQ
+"Average Distance (AU)" = { ( 1.4 +  1.2 +  1.46 + 1.84 + 2.04 + 1.34 ) }
+over 6
+.EN
+.EQ
+ approx 1.546666667 " AU"
+.EN
+.EE
+
+.KS
+.SE
+.EQ
+"Focal length " over "Semi major axis length" 
+,
+~~
+1.1cm over 8.1cm approx 0.1358024691 "[\-]"
+.EN
+.EE
+.nr eq_eccentricity \n[eq.num]
+.KE
+
+
+.SE
+.EQ
+{ r sub 1 sup 3 } over { T sub 1 sup 2 }
+=
+{ r sub 2 sup 3 } over { T sub 1 sup 2 }
+.EN
+.EE
+.nr eq_3rdlaw \n[eq.num]
+.EQ
+{ 1.62 AU sup 3 } over { 687 days sup 2 }
+=
+{ 1 AU sup 3 } over { 365 days sup 2 }
+.EN
+.EQ
+ 4.251528  over  471969 [\-]
+=
+ 1  over  133225  [\-]
+.EN
+.SE
+
+.EQ
+0.000009008066208 [\-]
+=
+0.000007506098705 [\-]
+.EN
+.EE
+.nr eq_3rdlawex \n[eq.num]
+
 
 .# Answers
 .## (1)
@@ -203,22 +286,14 @@ each planet's orbit about the Sun is an ellipse. The Sun's center is always loca
 the imaginary line joining a planet and the sons sweeps equal areas of space during equal time intervals as the planet orbits. Basically, that planets do not move with constant speed along their orbits. Rather, their speed varies so that the line joining the centers of the Sun and the planet sweeps out equal parts of an area in equal times. The point of nearest approach of the planet to the Sun is termed perihelion. The point of greatest separation is aphelion, hence by Kepler's Second Law, a planet is moving fastest when it is at perihelion and slowest at aphelion.
 .KE
 
+.KS
 .IP "\fBKepler's Third Law:\fP"
-the squares of the orbital periods of the planets are directly proportional to the cubes of the semi major axes of their orbits. Kepler's Third Law implies that the period for a planet to orbit the Sun increases rapidly with the radius of its orbit. Thus we find that Mercury, the innermost planet, takes only 88 days to orbit the Sun. The earth takes 365 days, while Saturn requires 10,759 days to do the same. Though Kepler hadn't known about gravitation when he came up with his three laws, they were instrumental in Isaac Newton deriving his theory of universal gravitation, which explains the unknown force behind Kepler's Third Law. Kepler and his theories were crucial in the better understanding of our solar system dynamics and as a springboard to newer theories that more accurately approximate our planetary orbits.
+the squares of the orbital periods of the planets are directly proportional to the cubes of the semi major axes of their orbits. Kepler's Third Law implies that the period for a planet to orbit the Sun increases rapidly with the radius of its orbit. Thus we find that Mercury, the innermost planet, takes only 88 days to orbit the Sun. The Earth takes 365 days, while Saturn requires 10,759 days to do the same. Though Kepler hadn't known about gravitation when he came up with his three laws, they were instrumental in Isaac Newton deriving his theory of universal gravitation, which explains the unknown force behind Kepler's Third Law. Kepler and his theories were crucial in the better understanding of our solar system dynamics and as a springboard to newer theories that more accurately approximate our planetary orbits.
+.KE
 .RE
 .## (2)
-.SE
-.EQ
-"Scaled Distance To Sun (AU)" = "Distance To Sun In Diagram (cm)" over 5
-.EN
-.EE
-.nr eq_scale \n[eq.num]
-.SE
-.mc
-.EQ
-"Distance from " M sub A " To Sun " =  { 7 cm } over 5 = 1.4 AU
-.EN
-.EE
+
+Using equation (\n[eq_scale]) we get
 .CD
 .TS
 allbox tab(|);
@@ -232,41 +307,15 @@ Position Of Mars | Diagram Distance (cm) | Scaled Distance (AU)
 @M sub F@|  6.7| 1.34
 .TE
 .DE
-.TABLE "Distance From Each Postion Of Mars To The Sun"
+.TABLE "Distance From Each Position Of Mars To The Sun"
 
-.KS
-.SE
-.EQ
-"Average Distance (AU)" =
-"Total Scaled Distance (AU)"
-over
-"Locations Of Mars"
-.EN
-.EE
-.KE
-.SE
-.EQ
-"Average Distance (AU)" = { ( 1.4 +  1.2 +  1.46 + 1.84 + 2.04 + 1.34 ) }
-over 6
-.EN
-.EQ
- approx 1.546666667 " AU"
-.EN
-.EE
+
 
 .ce
-.BOX "∴ the average distance between the sun and mars is 1.546666667  AU"
+.BOX "Using equation (\n[eq_avgdistance]) the average distance between the Sun and Mars is 1.546666667  AU"
 .## (3)
-.SE
-.EQ
-"Focal length " over "Semi major axis length" 
-,
-~~
-1.1cm over 8.1cm approx 0.1358024691 "[\-]"
-.EN
-.EE
 .ce
-.BOX "∴ the eccentricity of Mars is 0.1358024691 [\-]"
+.BOX "∴ using equation (\n[eq_eccentricity]) the eccentricity of Mars is 0.1358024691 [\-]"
 
 .## (4)
 Using the measurements for perihelion (7cm) and aphelion (9.2cm) with
@@ -276,60 +325,40 @@ equation(\n[eq_scale])
 .BOX "We find that the perihelion is 1.4AU and the aphelion is 1.84AU"
 .## (5)
 
-The orbital period of Earth is 365 and the orbital period of mars is 687.
+The orbital period of Earth is 365 and the orbital period of Mars is 687.
 
 .B1
-Based on the fact that the earth's orbital period is close to half the
+Based on the fact that the Earth's orbital period is close to half the
 orbital period of Mars it should be once every two years
 .B2
 .## (6)
-.\" what month are earth and mars closest
-.\" TODO
-
-In figure \n[fig_orbit] we can see that the closest Earth gets to Mars is at @M sub D@ it can be seen that Based on the given
-dates and diagram that was created it can 
+.\" what month are Earth and Mars closest
+In figure \n[fig_orbit] we can see that the closest Earth gets to Mars
+is at @M sub A@ with Earth at position @A sub 1@ it can be seen that
+Based on the given dates and diagram that was created that Earth and
+Mars likely are the closest in October.
 
 .## (7)
-.\" what month are earth and mars farthest apart
+.\" what month are Earth and Mars farthest apart
 .\" TODO
 
-In figure \n[fig_orbit] we can see that the closest Earth gets to Mars is at @M sub D@ it can be seen that Based on the given
-dates and diagram that was created it can 
+In figure \n[fig_orbit] we can see that the closest Earth gets to Mars
+is at @M sub F@ with Earth at @F sub 2@ it can be seen that Based on the
+given dates and diagram that was created it can be assumed that they are
+in conjunction in December.
 
 .## (8)
 
-recall that: The semi-major distance of mars is found to be 8.1cm aka 1.62AU
-recall that: The semi-major distance of mars is found to be 5.0cm aka 1AU
+Recall that: The semi-major distance of Mars is found to be 8.1cm aka 1.62AU
+.br
+Recall that: The semi-major distance of Mars is found to be 5.0cm aka 1AU
 
-.SE
-.EQ
-{ r sub 1 sup 3 } over { T sub 1 sup 2 }
-=
-{ r sub 2 sup 3 } over { T sub 1 sup 2 }
-.EN
-.EQ
-{ 1.62 AU sup 3 } over { 687 days sup 2 }
-=
-{ 1 AU sup 3 } over { 365 days sup 2 }
-.EN
-.EQ
- 4.251528  over  471969 [\-]
-=
- 1  over  133225  [\-]
-.EN
-.EQ
-0.000009008066208 [\-]
-=
-0.000007506098705 [\-]
-.EN
-.nr eq_3rdlaw \n[eq.num]
-.EE
-
-While these numbers are not identical they are close considering the
-possible error caused by miss aligning the ruler and considering the
-scale that these values are at. Therefore, we can conclude that the
-square of the orbital period is proportional to the cube of semi-major
-distance. This justifies Kepler's third law.
+The calculated ratio can be seen in equation (\n[eq_3rdlawex]) While
+these numbers are not identical they are close considering the possible
+error caused by miss aligning the ruler and considering the scale that
+these values are at. Therefore, we can conclude that the square of the
+orbital period is proportional to the cube of semi-major distance. This
+justifies Kepler's third law.
 .ig
 For each lab exercise the lab manual contains a list of questions for
 you to answer. Some of the questions relate to concepts covered in the
@@ -377,42 +406,87 @@ effect of these uncertainties in your results.
 .KS
 .# Discussion
 
-Average Distance from Sun 142 million miles
+The actual average distance from the Sun is 142,000,000 miles which is 1.527803343 AU.
+This is fairly close to our expected 1.546666667 AU
 .	\" expected 1.546666667  AU
 .[
-https://mars.nasa.gov/all-about-mars/facts/
+https://Mars.nasa.gov/all-about-Mars/facts/
 .]
+\&.
 .	\" expected 0.1358024691
-actually eccentricity of mars is 0.0935
-not surprised this is off since our major axis did not cross the
-sun so that would add extra length to the eccentricity
+The real eccentricity of Mars
 .[
-https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/Marsfact.html
 .]
-Mars and earth come close to each other every 2 years
-.	\" expected every two years
+is 0.0935
+which is very different from our calculated 0.1358024691. This
+deviation is likely due to the major-axis of Mars did not cross the Sun
+as expected. The fact that our major axis did not cross the Sun would
+add extra length to the eccentricity. As expected Mars and Earth come
+close to each other every 2 years
 .[
-https://mars.nasa.gov/all-about-mars/night-sky/close-approach/
+https://Mars.nasa.gov/all-about-Mars/night-sky/close-approach/
 .]
-Month are mars and earth closest Oct
+\&.
+.\" Finally the perihelion measured in at 1.4 AU while the aphelion was 1.84 AU.
+The actual perihelion of Mars
 .[
-https://mars.nasa.gov/all-about-mars/night-sky/close-approach/
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/Marsfact.html
 .]
-Perihelion of mars (106 km) 206.617
-Aphelion of mars(106 km) 249.229
+is 1.381326291 AU which could be just a rounding error compared to 1.4
+AU but considering that the expected Aphelion of 1.84 Au is very
+different from
+the actual Aphelion
 .[
-https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/Marsfact.HTML
 .]
+1.6662064122 AU we can see that this representation is not perfectly
+accurate. This is likely caused by the incorrect orbit of Earth we
+used.
 .
-.\" - TODO [ ] what month are earth and mars closest opposition
-.\" - TODO [ ] what month are earth and mars far apart conjunction
+.\" - TODO [ ] what month are Earth and Mars closest opposition
+.\" - TODO [ ] what month are Earth and Mars far apart conjunction
 .
-Semimajor axis of mars (106 km) 227.923
-Semimajor axis of earth (106 km) 149.596
+now using the equation (\n[eq_3rdlaw]) with the real semi-major axis of
+Mars (227923000 km) and Earth (149596000 km)
 .[
-https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/Marsfact.html
 .]
+we get
+.EQ
+0.000007496208588
+=
+0.000007508702436
+.EN
+These values are so close that this discrepancy is likely a rounding
+error.
 .KE
+.PP
+Earth in reality is intended to have a slight elliptical with a small
+eccentricity of 0.0167. Since we removed this elliptical shape this in
+theory would cause the Mars's orbit to be improperly shaped. This most likely
+would cause our measured eccentricity of Mars to be less accurate since
+our geocentric measure counts on the location of the Earth. If instead
+we used the geocentric measurements with the actual orbit of the Earth
+our findings would have been more accurate.
+
+The last time Earth and Mars where last at their closest was on October
+13th 2020
+.[
+https://www.space.com/Mars-opposition-october-2020
+.]
+\&.
+This is the closest they have been but they are actually in opposition
+every 26 months. Since Earth and Mars's period is not an exact multiple
+of each other it is understandable that they opposition would not occur
+on the same month every time. This falls into reason that our expected
+month of October is possible. The next time they will be this close is
+not until the year 2035
+.[
+https://skyandtelescope.org/press-releases/Mars-at-its-biggest-and-brightest-until-2035/
+.]
+\&.
+
 .
 .ig
 This section is where you determine how well you have understood the
@@ -453,9 +527,14 @@ Expand on these as necessary.
 
 .# Conclusions
 
+From the results found in this lab we have justified Kepler's laws.
+Now we know how to utilize triangulation, planetary motion, and how the
+heliocentric, and geocentric  coordinates systems work.
+
 .[
 $LIST$
 .]
+
 .ig
 Finish the report by briefly stating what you learnt from the lab
 exercise, how well the learning objectives where met, and how your
