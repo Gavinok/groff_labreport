@@ -1,11 +1,6 @@
 .EQ
 delim @@
 .EN
-.R1
-label-in-reference
-accumulate
-no-move-punctuation
-.R2
 .nr HM 2c
 .nr FM 2c
 .nr PS 11
