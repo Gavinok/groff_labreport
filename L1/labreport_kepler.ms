@@ -1,22 +1,7 @@
 .so ../labrep/tmac.lab
 .de SE
-.mk a
-..
-.de EE
-.br
-.mk b
-.sp |\\nau
-.rj
-
 .nr eq.num +1
-(\\n[eq.num])
-.sp |\\nbu
 ..
-.R1
-label-in-reference
-accumulate
-no-move-punctuation
-.R2
 .nr labNUM 2
 .ds labTITLE Mars Orbit (\\fIor\\fP) Mars Orbit
 .nr labmonth 1
@@ -194,61 +179,51 @@ location 1 | location 2 | Distance (cm) |Distance (AU)
 
 .# Calculations
 .SE
-.EQ
+.EQ (\\n[eq.num])
 "Scaled Distance To Sun (AU)" = "Distance To Sun In Diagram (cm)" over 5
 .EN
-.EE
 .nr eq_scale \n[eq.num]
 .SE
-.EQ
+.EQ (\\n[eq.num])
 "Distance from " M sub A " To Sun " =  { 7 cm } over 5 = 1.4 AU
 .EN
-.EE
-
-
-
 
 .KS
 .SE
-.EQ
+.EQ (\\n[eq.num])
 "Average Distance (AU)" =
 "Total Scaled Distance (AU)"
 over
 "Locations Of Mars"
 .EN
-.EE
 .nr eq_avgdistance \n[eq.num]
 .KE
 .SE
-.EQ
+.EQ (\\n[eq.num])
 "Average Distance (AU)" = { ( 1.4 +  1.2 +  1.46 + 1.84 + 2.04 + 1.34 ) }
 over 6
 .EN
 .EQ
  approx 1.546666667 " AU"
 .EN
-.EE
 
 .KS
 .SE
-.EQ
+.EQ (\\n[eq.num])
 "Focal length " over "Semi major axis length" 
 ,
 ~~
 1.1cm over 8.1cm approx 0.1358024691 "[\-]"
 .EN
-.EE
 .nr eq_eccentricity \n[eq.num]
 .KE
 
-
 .SE
-.EQ
+.EQ (\\n[eq.num])
 { r sub 1 sup 3 } over { T sub 1 sup 2 }
 =
 { r sub 2 sup 3 } over { T sub 1 sup 2 }
 .EN
-.EE
 .nr eq_3rdlaw \n[eq.num]
 .EQ
 { 1.62 AU sup 3 } over { 687 days sup 2 }
@@ -262,14 +237,12 @@ over 6
 .EN
 .SE
 
-.EQ
+.EQ (\\n[eq.num])
 0.000009008066208 [\-]
 =
 0.000007506098705 [\-]
 .EN
-.EE
 .nr eq_3rdlawex \n[eq.num]
-
 
 .# Answers
 .## (1)
