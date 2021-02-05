@@ -179,18 +179,18 @@ location 1 | location 2 | Distance (cm) |Distance (AU)
 
 .# Calculations
 .SE
-.EQ (\\n[eq.num])
+.EQ (\n[eq.num])
 "Scaled Distance To Sun (AU)" = "Distance To Sun In Diagram (cm)" over 5
 .EN
 .nr eq_scale \n[eq.num]
 .SE
-.EQ (\\n[eq.num])
+.EQ (\n[eq.num])
 "Distance from " M sub A " To Sun " =  { 7 cm } over 5 = 1.4 AU
 .EN
 
 .KS
 .SE
-.EQ (\\n[eq.num])
+.EQ (\n[eq.num])
 "Average Distance (AU)" =
 "Total Scaled Distance (AU)"
 over
@@ -199,7 +199,7 @@ over
 .nr eq_avgdistance \n[eq.num]
 .KE
 .SE
-.EQ (\\n[eq.num])
+.EQ (\n[eq.num])
 "Average Distance (AU)" = { ( 1.4 +  1.2 +  1.46 + 1.84 + 2.04 + 1.34 ) }
 over 6
 .EN
@@ -209,7 +209,7 @@ over 6
 
 .KS
 .SE
-.EQ (\\n[eq.num])
+.EQ (\n[eq.num])
 "Focal length " over "Semi major axis length" 
 ,
 ~~
@@ -219,7 +219,7 @@ over 6
 .KE
 
 .SE
-.EQ (\\n[eq.num])
+.EQ (\n[eq.num])
 { r sub 1 sup 3 } over { T sub 1 sup 2 }
 =
 { r sub 2 sup 3 } over { T sub 1 sup 2 }
@@ -237,7 +237,7 @@ over 6
 .EN
 .SE
 
-.EQ (\\n[eq.num])
+.EQ (\n[eq.num])
 0.000009008066208 [\-]
 =
 0.000007506098705 [\-]
@@ -281,8 +281,6 @@ Position Of Mars | Diagram Distance (cm) | Scaled Distance (AU)
 .TE
 .DE
 .TABLE "Distance From Each Position Of Mars To The Sun"
-
-
 
 .ce
 .BOX "Using equation (\n[eq_avgdistance]) the average distance between the Sun and Mars is 1.546666667  AU"
