@@ -1,7 +1,7 @@
 # Groff Lab Report
 
 This is a simple template, makefile, and extra macros for writing
-lab reports
+lab reports.
 
 <img src="https://i.imgur.com/aWTFNZd.png"/>
 
