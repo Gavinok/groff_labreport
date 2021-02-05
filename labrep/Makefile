@@ -1,9 +1,11 @@
 ROFF = groff -Z
 GROFFOPTS = -b -wall
 MACROS = -ms
-ROFFEXT = ms
 POST = grops
 POSTOPTS = 
+REFROPTS =
+
+ROFFEXT = ms
 TARGETFORMAT = pdf 
 CLEANLINTERCMD = sed -e 's/\.clean//'
 SRCS=$(shell ls -t *.$(ROFFEXT) | head -1 | sed -e "s/\.$(ROFFEXT)//")
@@ -11,7 +13,7 @@ TARGET := $(addsuffix .$(TARGETFORMAT),$(basename $(SRCS)))
 ERRORFILE=log.error
 LAST=$(shell ls -t *.$(ROFFEXT) | head -1 | sed -e "s/\.$(ROFFEXT)//")
 
-PRE = soelim | preconv | refer -p ref |  tbl |  eqn
+PRE = soelim | preconv | refer $(REFROPTS) |  tbl |  eqn
 
 all: $(TARGET)
 
@@ -21,10 +23,11 @@ all: $(TARGET)
 	ps2pdf $< $@
 
 .$(ROFFEXT).ps:
-	cat $< | $(PRE) | $(ROFF) $(MACROS) 2>$(ERRORFILE) | $(POST) $(POSTOPTS) >$@
+	cat $< | $(PRE) | $(ROFF) $(MACROS) $(ROFFOPTS) 2>$(ERRORFILE) | $(POST) $(POSTOPTS) >$@
 	@$(MAKE) checkerrors
 
 # Uncomment to use dvi as intermittent format (requires texlive-core) installation
+# XXX Only compatable with groff
 # .dvi.pdf:
 # 	@dvipdf $< $@
 
