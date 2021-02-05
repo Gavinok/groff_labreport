@@ -1,17 +1,19 @@
-ROFF = groff
-GROFFOPTS = -kepts -b -wall
+ROFF = groff -Z
+GROFFOPTS = -b -wall
 MACROS = -ms
 ROFFEXT = ms
 POST = grops
 POSTOPTS = 
 TARGETFORMAT = pdf 
 CLEANLINTERCMD = sed -e 's/\.clean//'
-SRCS = $(shell ls -t *.$(ROFFEXT) | head -1 | sed -e "s/\.$(ROFFEXT)//")
+SRCS=$(shell ls -t *.$(ROFFEXT) | head -1 | sed -e "s/\.$(ROFFEXT)//")
 TARGET := $(addsuffix .$(TARGETFORMAT),$(basename $(SRCS)))
 ERRORFILE=log.error
 LAST=$(shell ls -t *.$(ROFFEXT) | head -1 | sed -e "s/\.$(ROFFEXT)//")
 
-all: ${TARGET}
+PRE = soelim | preconv | refer -p ref |  tbl |  eqn
+
+all: $(TARGET)
 
 .SUFFIXES: .tr .ms .ps .pdf .PDF .html
 
@@ -19,29 +21,28 @@ all: ${TARGET}
 	ps2pdf $< $@
 
 .$(ROFFEXT).ps:
-	$(ROFF) -Z $(MACROS) 2>$(ERRORFILE) $< | $(POST) $(POSTOPTS) >$@
+	cat $< | $(PRE) | $(ROFF) $(MACROS) 2>$(ERRORFILE) | $(POST) $(POSTOPTS) >$@
 	@$(MAKE) checkerrors
+
+# Uncomment to use dvi as intermittent format (requires texlive-core) installation
+# .dvi.pdf:
+# 	@dvipdf $< $@
+
+.$(ROFFEXT).dvi:
+	cat $< | $(PRE) -Tdvi | $(ROFF) -Tdvi $(DVIOPT) $(ROFFOPTS) $(MACROS) 2>$(ERRORFILE) | grodvi >$@
+	@$(MAKE) -s checkerrors
 
 checkerrors: $(ERRORFILE) 
 	@sed "s/<standard input>/$(SRCS)/g" $(ERRORFILE) 
 	rm -f $(ERRORFILE)
 
-%.clean: ${SRCS}
+%.clean: $(SRCS)
 	deroff $< > $@
-
-lint: ${SRCS}.clean
-	-grep -Hn "[−’]" $<  | $(CLEANLINTERCMD)
-	writegood --parse $< | $(CLEANLINTERCMD)
-	proselint $<         | $(CLEANLINTERCMD)
-	diction --suggest --beginner $< | $(CLEANLINTERCMD)
-	rm $<
-
-lastpdf: $(LAST).pdf
 
 last:
 	@echo $(LAST).ms
 
 clean:
-	rm -f *.pdf *.PDF *.ps
+	rm -f $(SRCS).pdf $(SRCS).ps
 
 .PHONY: clean all lint test

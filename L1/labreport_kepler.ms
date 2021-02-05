@@ -1,4 +1,4 @@
-.so tmac.lab
+.so ../labrep/tmac.lab
 .de SE
 .mk a
 ..
